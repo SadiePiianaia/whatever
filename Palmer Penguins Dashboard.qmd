@@ -1,0 +1,37 @@
+---
+title: "Palmer Penguins Dashboard"
+author: "Sadie Piianaia"
+format: dashboard
+---
+
+```{r}
+#command option I to insert a code chunck
+
+library(tidyverse)
+library(plotly)
+library(palmerpenguins)
+
+penguins <- penguins
+view(penguins)
+```
+
+## Row 1
+
+```{r, warning=FALSE}
+
+ggplot(data = penguins, aes(x = island, y = body_mass_g)) +
+  geom_boxplot()
+
+```
+
+```{r, warning=FALSE}
+
+ggplot(penguins, aes(island, bill_length_mm)) +
+  geom_boxplot()
+```
+
+## Row 2
+
+```{r}
+
+```
