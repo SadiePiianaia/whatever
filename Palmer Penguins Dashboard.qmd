@@ -10,6 +10,8 @@ format: dashboard
 library(tidyverse)
 library(plotly)
 library(palmerpenguins)
+install.packages("plotly")
+
 
 penguins <- penguins
 ```
@@ -35,10 +37,13 @@ ggplotly(bill_by_island)
 ## Row 2 {.tabset}
 
 ```{r, warning=FALSE}
+
 #| title: Flipper Length by Mass
-ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = species)) +
+
+flipper_by_mass <- ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = species)) +
   geom_point()
 
+ggplotly(flipper_by_mass)
 ```
 
 ```{r}

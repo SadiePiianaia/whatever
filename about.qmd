@@ -1,9 +1,12 @@
 ---
 title: "About"
+author: "Sadie Piianaia"
+date: "11/2/2026"
+format: dashboard
 ---
 
 About this site
 
-```{r}
-1 + 1
+```{r, echo=FALSE, warning=FALSE, messgae=FALSE}
+
 ```
