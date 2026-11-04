@@ -3,7 +3,7 @@ title: "Candy"
 author: "Sadie Piianaia"
 date: "11/2/2026"
 format: 
-  dashboard
+  dashboard:
     theme: solar
 ---
 

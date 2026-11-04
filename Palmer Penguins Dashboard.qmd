@@ -1,7 +1,9 @@
 ---
 title: "Palmer Penguins Dashboard"
 author: "Sadie Piianaia"
-format: dashboard
+format: 
+  dashboard:
+    theme: solar
 ---
 
 ```{r}
@@ -10,8 +12,6 @@ format: dashboard
 library(tidyverse)
 library(plotly)
 library(palmerpenguins)
-install.packages("plotly")
-
 
 penguins <- penguins
 ```
